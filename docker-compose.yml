@@ -1,0 +1,21 @@
+version: "3"
+services:
+  www:
+    image: nginx
+    expose:
+      - 80
+    ports:
+      - "80:80"
+    restart: always
+    volumes:
+      - ./config:/etc/nginx/conf.d
+      # - ./:/static
+      - ./:/app
+    environment:
+      VIRTUAL_HOST: effortless.dk,www.effortless.dk
+      LETSENCRYPT_HOST: effortless.dk,www.effortless.dk
+      LETSENCRYPT_EMAIL: anders@wiberg.tech
+# networks:
+#   default:
+#     external:
+#       name: nginx-proxy
