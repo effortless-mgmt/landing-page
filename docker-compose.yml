@@ -15,7 +15,7 @@ services:
       VIRTUAL_HOST: effortless.dk,www.effortless.dk
       LETSENCRYPT_HOST: effortless.dk,www.effortless.dk
       LETSENCRYPT_EMAIL: anders@wiberg.tech
-# networks:
-#   default:
-#     external:
-#       name: nginx-proxy
+networks:
+  default:
+    external:
+      name: nginx-proxy
