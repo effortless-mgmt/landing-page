@@ -3,3 +3,5 @@ thumbs.db
 .vscode
 .idea
 .node_modules
+.cache
+dist
