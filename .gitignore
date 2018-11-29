@@ -5,3 +5,4 @@ thumbs.db
 .node_modules
 .cache
 dist
+docker-compose.*.yml
